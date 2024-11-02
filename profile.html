@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maulana Firdaus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      .carousel img {
+        min-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white flex justify-center min-h-screen">
+    <div class="max-w-2xl w-full">
+      <!-- Top Section -->
+      <section class="mb-4">
+        <div
+          class="flex items-center mb-4 border-t border-b border-gray-500 py-1"
+        >
+          <!-- Home Icon -->
+          <a href="./index.html" class="text-lg mr-4 ml-2 hover:text-gray-400">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <h2 class="text-2xl font-bold">Maulana Firdaus</h2>
+        </div>
+
+        <div class="carousel">
+          <img
+            src="./images/profile/profile-horizontal.jpg"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-[400px]"
+          />
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Summary
+          </h2>
+        </div>
+        <div class="px-4">
+          <p>
+            With over 7 years of experience in mobile development, I specialize
+            in creating high-performance, user-centric Android & Flutter apps.
+            Currently, I lead mobile development at Advotics Teknologi Global,
+            where I've successfully developed apps that enhance warehouse
+            management, streamline sales tracking, and improve customer loyalty.
+          </p>
+          <br />
+          <p>
+            My background in both native Android (Java/Kotlin) and
+            cross-platform development with Flutter enables me to design and
+            execute versatile solutions that align with business goals and user
+            needs. I excel in the complete mobile app lifecycle, from ideation
+            and development to performance optimization and deployment.
+          </p>
+          <br />
+          <p>
+            In previous roles, I've contributed to well-known applications at
+            Halodoc & WORKnPLAY, gaining diverse experience across industries
+            like healthcare and property. I thrive in collaborative
+            environments, continuously refining my skills, mentoring teams, and
+            staying current with the latest mobile technologies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Skills
+          </h2>
+        </div>
+        <div class="px-4 mb-4">
+          <p>
+            <strong>Android</strong> : Java, Kotlin, XML, Compose, Retrofit,
+            Hilt, MVVM, Live Data, Coroutine, RXJava, CameraX, MLKit,
+            MPAndroidChart
+          </p>
+          <p>
+            <strong>Flutter</strong> : Dart, GetX, BLOC, Dio, freezed, Mobile
+            Scanner, flutter config using .env
+          </p>
+          <p>
+            <strong>React Native</strong> : javascript, axios, AsyncStorage, MVC
+          </p>
+          <p>
+            <strong>Web</strong> : HTML, CSS, javacsript, tailwind, React JS,
+            axios
+          </p>
+          <p><strong>Laravel</strong> : PHP, Rest Api, JSON, JWT</p>
+          <p><strong>SQL</strong> : SQLite, SQLChipper, sqflite, Room, MySQL</p>
+          <p>
+            <strong>Firebase</strong> : Crashlytics, App Distribution, Remote
+            Config, Messaging / Push Notification
+          </p>
+          <p>
+            <strong>Others</strong> : Google Maps, GIT, CI/CD, Unit Test,
+            Sonarqube
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

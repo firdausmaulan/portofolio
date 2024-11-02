@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maulana Firdaus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      .carousel img {
+        min-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white flex justify-center min-h-screen">
+    <div class="max-w-2xl w-full">
+      <!-- Top Section -->
+      <section class="mb-4">
+        <div
+          class="flex items-center mb-4 border-t border-b border-gray-500 py-1"
+        >
+          <!-- Home Icon -->
+          <a href="./index.html" class="text-lg mr-4 ml-2 hover:text-gray-400">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <h2 class="text-2xl font-bold">WORKnPLAY v1</h2>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <img
+            src="./images/wnp-v1/wnp2.jpg"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-[400px]"
+          />
+          <img
+            src="./images/wnp-v1/wnp1.jpg"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-[400px]"
+          />
+          <img
+            src="./images/wnp-v1/wnp3.jpg"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-[400px]"
+          />
+          <img
+            src="./images/wnp-v1/worknplay.jpg"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-[400px]"
+          />
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            About The App
+          </h2>
+        </div>
+        <div class="px-4">
+          <p>
+            WORKnPLAY is a property listing platform, also offering services
+            like flight booking, hotel reservations, and online taxi booking.
+          </p>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Description
+          </h2>
+        </div>
+        <div class="px-4 mb-4">
+          <p>- Develop WORKnPLAY App v1 (2017)</p>
+          <p>
+            - Tech Stack And Tools : Java, Loopj AsyncHttpClient, SQLite, Google
+            Maps.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const carousel = document.getElementById("carousel");
+      const images = carousel.children;
+      let index = 0;
+
+      function startCarousel() {
+        setInterval(() => {
+          index = (index + 1) % images.length;
+          carousel.scrollTo({
+            left: index * carousel.clientWidth,
+            behavior: "smooth",
+          });
+        }, 5000);
+      }
+
+      startCarousel();
+    </script>
+  </body>
+</html>

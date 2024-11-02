@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maulana Firdaus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      .carousel img {
+        min-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white flex justify-center min-h-screen">
+    <div class="max-w-2xl w-full">
+      <!-- Top Section -->
+      <section class="mb-4">
+        <div
+          class="flex items-center mb-4 border-t border-b border-gray-500 py-1"
+        >
+          <!-- Home Icon -->
+          <a href="./index.html" class="text-lg mr-4 ml-2 hover:text-gray-400">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <h2 class="text-2xl font-bold">Halodoc</h2>
+        </div>
+
+        <div class="carousel">
+          <iframe
+            width="100%"
+            height="300"
+            src="https://www.youtube.com/embed/xfckgQO-Qe8?si=q8TWG6lXtjmIdFXL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            About The Company
+          </h2>
+        </div>
+        <div class="px-4">
+          <p>
+            Halodoc is a secure health-tech platform with a mission to
+            simplifying access to healthcare by connecting millions of patients
+            with licensed doctors, insurance, labs, and pharmacies in one simple
+            mobile application. Halodoc's innovative technology, nimble
+            services, and patient focus enable a host of solutions including
+            24/7 doctor tele consultation via chat, voice or video; medicine
+            purchase & delivery; lab services at home; and strong customer
+            support.
+          </p>
+          <p>
+            Halodoc is the 2018 Forbes Indonesia Choice Award winner and Galen
+            Growth's 2018 Most Innovative HealthTech Startup in Asia, a
+            testimony to a team of compassionate, innovative, trustworthy and
+            agile people who take ownership of their work in building the most
+            trusted digital healthcare company.
+          </p>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Job Description
+          </h2>
+        </div>
+        <div class="px-4 mb-4">
+          <p>Position : Android Developer (May 2018 - Jul 2019)</p>
+          <p>
+            - Developed Halodoc Midwives App for ordering medicine or
+            supplements.
+          </p>
+          <p>
+            - Halodoc Midwives Pharmacy App for managing orders and deliveries
+            via GOJEK.
+          </p>
+          <p>
+            - Tech Stack : Kotlin, MVP, Retrofit, Room, Push Notification,
+            Google Maps, Payment Gateway (Midtrans), Crashlytics, Unit Test,
+            Multi Modules.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

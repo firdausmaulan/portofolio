@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maulana Firdaus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      .carousel img {
+        min-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white flex justify-center min-h-screen">
+    <div class="max-w-2xl w-full">
+      <!-- Top Section -->
+      <section class="mb-4">
+        <div
+          class="flex items-center mb-4 border-t border-b border-gray-500 py-1"
+        >
+          <!-- Home Icon -->
+          <a href="./index.html" class="text-lg mr-4 ml-2 hover:text-gray-400">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <h2 class="text-2xl font-bold">Advotics</h2>
+        </div>
+
+        <div class="carousel">
+          <iframe
+            width="100%"
+            height="300"
+            src="https://www.youtube.com/embed/ZdjnQUIh0D8?si=NYjhOkwx7cLLLMQy"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            About The Company
+          </h2>
+        </div>
+        <div class="px-4">
+          <p>
+            Advotics is a software company offering ERP solutions through a SaaS
+            model for supply chain management, serving factories, warehouses,
+            deliveries and loyalty systems. Trusted by major companies such as
+            Pertamina, Federal Oil/Mobil, Motul, Coca-Cola, Saint-Gobain,
+            Blibli, and others.
+          </p>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Job Description
+          </h2>
+        </div>
+        <div class="px-4 mb-4">
+          <p>Position : Lead/Senior Mobile Developer (Aug 2019 - Present)</p>
+          <br />
+          <p><strong>Develop Factory & Warehouse App</strong></p>
+          <p>
+            <strong>- Features</strong> : Scanner, Product Packaging & Identity,
+            Quality Control, Inbound-Outbound, Inventory, Stock Opname.
+          </p>
+          <p>
+            <strong>- Tech Stack</strong> : Java, Kotlin, MVVM, Room with
+            SQLChipper, Scanner (CameraX, MLKit, Honeywell, Panda Scanner),
+            Background Service for Scheduled Sync, Multi Module by role
+            (Operator/Manager), MPAndroidChart, Custom Network Logger (like
+            Chucker), Firebase Crashlytics, Firebase App Distribution, Unit
+            Test, Sonarqube, Gitlab, gitlab-ci, Multi Variants (Different App
+            for Multi Clients).
+          </p>
+          <br />
+          <p><strong>Develop Sales Tracking & Delivery Order App</strong></p>
+          <p>
+            <strong>- Features</strong> : Offline Mode, Journey Plan, New Outlet
+            Registration, Check In, Sales Order, Delivery Order.
+          </p>
+          <p>
+            <strong>- Tech Stack</strong> : Java, Kotlin, MVVM, Room, Dagger
+            Hilt, Live Data, Coroutine, RxJava, AWS S3 SDK, Custom Network
+            Logger (like Chucker), Google Maps, Push Notification (One Signal),
+            Foreground Service for Live Tracking Location, Background Service
+            for Scheduled Sync, WorkManager for Download Data (Products, Journey
+            Plan, etc), Firebase Crashlytics, Firebase App Distribution, Unit
+            Test, Sonarqube, Gitlab, gitlab-ci, Multi Variants (Different App
+            for Multi Clients).
+          </p>
+          <br />
+          <p><strong>Develop Loyalty App for Retailers / Outlets</strong></p>
+          <p>
+            <strong>- Features</strong> : Point & Reward, Point of Sales, Create
+            Order, Inventory Scan.
+          </p>
+          <p>
+            <strong>- Tech Stack</strong> : Flutter, Dart, GetX, get_storage,
+            sqflite, flutter_config (read config from .env), Google Maps, Mobile
+            Scanner, Custom Network Logger (like Chucker), Firebase Crashlytics,
+            Firebase App Distribution, Gitlab, gitlab-ci, Multi Variants
+            (Different App for Multi Clients).
+          </p>
+          <br />
+          <p><strong>Highlighted Work:</strong></p>
+          <p><strong>Enhanced Developer Experience & Productivity:</strong></p>
+          <p>
+            - Optimized App Efficiency: Reduced the app size from 25 MB to 18 MB
+            and cut build time by nearly 25%, bringing it down from 22 minutes
+            to 17 minutes.
+          </p>
+          <p>
+            - CI/CD Pipeline Development: Designed and implemented a CI/CD
+            pipeline capable of managing multiple app variants for each client.
+            Integrated Firebase App Distribution to streamline distribution
+            across QA and user testing environments, enabling seamless app
+            management by variant, stage, and version.
+          </p>
+          <p>
+            - Network Logger Integration: Created a network logger tool to
+            improve issue debugging and visibility for Development, QA, PM, and
+            Support teams, making it easier to identify and resolve issues in
+            real time.
+          </p>
+          <br />
+          <p><strong>Enhanced App Quality & Stability:</strong></p>
+          <p>
+            - Significantly Increased Stability: Improved crash-free user
+            percentage from 40% to over 90%, consistently maintaining stability
+            across all apps.
+          </p>
+          <p>
+            - Implemented Testing & Quality Assurance Tools: Integrated unit
+            tests and static code analysis (SonarQube) to enhance code quality.
+            Reduced potential errors from 56 to 2 and eliminated 491
+            vulnerabilities based on SonarQube reports.
+          </p>
+          <br />
+          <p><strong>Addressing Business Needs:</strong></p>
+          <p>
+            - Built Versatile Scanning Solution: Developed BaseScanner to
+            support various scanning types, including Camera with MLKit,
+            Honeywell Scanner, and Panda Scanner (HID & SPP), ensuring
+            compatibility with different hardware and client needs.
+          </p>
+          <p>
+            - Ensured Offline Functionality and Network Resilience: Created
+            offline-capable features to maintain business continuity even
+            without network connectivity. Implemented a data download service
+            and synchronization feature, allowing users to perform essential
+            tasks seamlessly, regardless of connectivity issues.
+          </p>
+          <p>
+            - Developed Sustainable Live Tracking Service: Delivered a robust
+            live tracking solution tailored to business requirements, capable of
+            running continuously for over 8 hours daily. Optimized for minimal
+            battery usage and fully compliant with Google Play Store privacy
+            policies.
+          </p>
+          <p>
+            - Cross-Platform Development: Rebuilt the Loyalty App in Flutter,
+            achieving cross-platform compatibility on both Android and iOS.
+          </p>
+        </div>
+      </section>
+
+      <!-- Suply Chain Process Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Suply Chain Process
+          </h2>
+        </div>
+        <div class="px-4">
+          <p><strong>Factory Production</strong></p>
+          <p>
+            In the factory, products are manufactured and uniquely identified by
+            serial numbers for tracking purposes. For example, each can of oil
+            receives a serial number. Once produced, cans are grouped into
+            boxes, which are also assigned unique serial numbers. These boxes
+            may then be consolidated into larger units, or pallets, each of
+            which is similarly identified by a unique serial number. Prior to
+            leaving the factory, products undergo thorough Quality Control (QC)
+            checks, where they are scanned and labeled as either “QC Pass” or
+            “QC Fail” to ensure only high-quality products proceed to the next
+            stage.
+          </p>
+          <br />
+          <p><strong>Warehouse Management System</strong></p>
+          <p>
+            Upon completion of production, products are transferred to
+            designated warehouses across various regions. In the inbound
+            process, each product is scanned to verify authenticity and count.
+            Products are then organized within the warehouse according to
+            designated storage areas called "lines," which contain multiple
+            racks. Internal transfers within the warehouse, referred to as
+            "Intra-Warehouse Transfers," allow for efficient movement and
+            storage. Inventory and stock checks are conducted regularly, and any
+            defective products identified are flagged in the system as
+            unsellable. Approved products are prepared for dispatch to retail
+            outlets, where they undergo an outbound process, including final
+            scans to ensure accuracy.
+          </p>
+          <br />
+          <p><strong>Sales Order & Delivery Order</strong></p>
+          <p>
+            Once products are stocked in warehouses, they are ready for
+            distribution to retail outlets. Sales representatives visit these
+            outlets to manage sales orders, which are supported by a robust
+            tracking system that includes journey planning, promotions,
+            invoicing, and documentation. After a sales order is confirmed,
+            products are released from the warehouse in a "Delivery Order"
+            process, ensuring that items are delivered promptly to the intended
+            outlets.
+          </p>
+          <br />
+          <p><strong>Point of Sale (POS) & Loyalty System</strong></p>
+          <p>
+            Upon receiving products, outlets can begin selling them to
+            customers. Each product is scanned at the point of sale to confirm
+            its serial number, allowing outlets to track sales through the POS
+            system. Additionally, a loyalty program enables customers to earn
+            points with each purchase. Accumulated points can be redeemed for
+            available rewards, such as gifts or vouchers, creating a rewarding
+            experience for loyal customers.
+          </p>
+        </div>
+      </section>
+      <br />
+    </div>
+  </body>
+</html>

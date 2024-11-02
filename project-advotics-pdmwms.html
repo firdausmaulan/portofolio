@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maulana Firdaus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+      .carousel img {
+        min-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white flex justify-center min-h-screen">
+    <div class="max-w-2xl w-full">
+      <!-- Top Section -->
+      <section class="mb-4">
+        <div
+          class="flex items-center mb-4 border-t border-b border-gray-500 py-1"
+        >
+          <!-- Home Icon -->
+          <a href="./index.html" class="text-lg mr-4 ml-2 hover:text-gray-400">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <h2 class="text-2xl font-bold">Advotics PDM-WMS</h2>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <img
+            src="./images/pdmwms/pdmwms1.png"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-auto"
+          />
+          <img
+            src="./images/pdmwms/pdmwms3.png"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-auto"
+          />
+          <img
+            src="./images/pdmwms/pdmwms5.png"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-auto"
+          />
+          <img
+            src="./images/pdmwms/pdmwms2.png"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-auto"
+          />
+          <img
+            src="./images/pdmwms/pdmwms4.png"
+            alt="Image 1"
+            class="h-64 sm:h-80 md:h-96 lg:h-auto"
+          />
+        </div>
+      </section>
+
+      <!-- Suply Chain Process Section -->
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Suply Chain Process
+          </h2>
+        </div>
+        <div class="px-4">
+          <p><strong>Factory Production</strong></p>
+          <p>
+            In the factory, products are manufactured and uniquely identified by
+            serial numbers for tracking purposes. For example, each can of oil
+            receives a serial number. Once produced, cans are grouped into
+            boxes, which are also assigned unique serial numbers. These boxes
+            may then be consolidated into larger units, or pallets, each of
+            which is similarly identified by a unique serial number. Prior to
+            leaving the factory, products undergo thorough Quality Control (QC)
+            checks, where they are scanned and labeled as either “QC Pass” or
+            “QC Fail” to ensure only high-quality products proceed to the next
+            stage.
+          </p>
+          <br />
+          <p><strong>Warehouse Management System</strong></p>
+          <p>
+            Upon completion of production, products are transferred to
+            designated warehouses across various regions. In the inbound
+            process, each product is scanned to verify authenticity and count.
+            Products are then organized within the warehouse according to
+            designated storage areas called "lines," which contain multiple
+            racks. Internal transfers within the warehouse, referred to as
+            "Intra-Warehouse Transfers," allow for efficient movement and
+            storage. Inventory and stock checks are conducted regularly, and any
+            defective products identified are flagged in the system as
+            unsellable. Approved products are prepared for dispatch to retail
+            outlets, where they undergo an outbound process, including final
+            scans to ensure accuracy.
+          </p>
+          <br />
+          <p><strong>Sales Order & Delivery Order</strong></p>
+          <p>
+            Once products are stocked in warehouses, they are ready for
+            distribution to retail outlets. Sales representatives visit these
+            outlets to manage sales orders, which are supported by a robust
+            tracking system that includes journey planning, promotions,
+            invoicing, and documentation. After a sales order is confirmed,
+            products are released from the warehouse in a "Delivery Order"
+            process, ensuring that items are delivered promptly to the intended
+            outlets.
+          </p>
+          <br />
+          <p><strong>Point of Sale (POS) & Loyalty System</strong></p>
+          <p>
+            Upon receiving products, outlets can begin selling them to
+            customers. Each product is scanned at the point of sale to confirm
+            its serial number, allowing outlets to track sales through the POS
+            system. Additionally, a loyalty program enables customers to earn
+            points with each purchase. Accumulated points can be redeemed for
+            available rewards, such as gifts or vouchers, creating a rewarding
+            experience for loyal customers.
+          </p>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            About The App
+          </h2>
+        </div>
+        <div class="px-4">
+          <p>
+            - Product Data Management & Warehouse Management System (PDM-WMS) is
+            a system to manage products in factory and warehouse.
+          </p>
+          <p>
+            - Clients : Pertamina PTPL, East West Seed Indonesia (EWINDO), PDSU.
+          </p>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section>
+        <div class="text-center mb-4 mt-4">
+          <h2 class="text-2xl font-bold border-t border-b border-gray-500 py-1">
+            Description
+          </h2>
+        </div>
+        <div class="px-4 mb-4">
+          <p>- Develop PDM-WMS App (2019-2024)</p>
+          <p>
+            - Features : Scanner, Product Packaging & Identity, Quality
+            Controll, Inbound-Outbound, Inventory, Stock Opname.
+          </p>
+          <p>
+            - Tech Stack : Java, Kotlin, MVVM, Room with SQLChipper, Scanner
+            (CameraX, MLKit, Honeywell, Panda Scanner), Background Service for
+            Scheduled Sync, Multi Module by role (Operator/Manager),
+            MPAndroidChart, Custom Network Logger (like Chucker), Firebase
+            Crashlytics, Firebase App Distribution, Unit Test, Sonarqube,
+            Gitlab, gitlab-ci, Multi Variants (Different App for Multi Clients).
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const carousel = document.getElementById("carousel");
+      const images = carousel.children;
+      let index = 0;
+
+      function startCarousel() {
+        setInterval(() => {
+          index = (index + 1) % images.length;
+          carousel.scrollTo({
+            left: index * carousel.clientWidth,
+            behavior: "smooth",
+          });
+        }, 5000);
+      }
+
+      startCarousel();
+    </script>
+  </body>
+</html>
